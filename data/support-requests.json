@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1778416090612,
+    "name": "Script",
+    "email": "script@example.com",
+    "message": "hello from script",
+    "createdAt": "2026-05-10T12:28:10.612Z"
+  },
+  {
+    "id": 1778416403910,
+    "name": "BrowserTester",
+    "email": "test-browser@example.com",
+    "message": "Hello from browser test",
+    "createdAt": "2026-05-10T12:33:23.910Z"
+  },
+  {
+    "id": 1778416696680,
+    "name": "Script",
+    "email": "script@example.com",
+    "message": "hello from script",
+    "createdAt": "2026-05-10T12:38:16.680Z"
+  }
+]
