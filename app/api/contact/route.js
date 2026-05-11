@@ -52,7 +52,7 @@ async function storeEntry(entry) {
 
   // Local file fallback only for development to keep hosted environments safe
   if (process.env.NODE_ENV === 'production') {
-    throw new Error('No upstream storage configured in production')
+    throw new Error('Production Error: SUPPORT_WEBHOOK_URL or SendGrid keys are not configured in environment variables.')
   }
 
   try {

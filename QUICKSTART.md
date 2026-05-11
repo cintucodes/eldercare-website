@@ -42,7 +42,7 @@ The static site will be in the `out/` directory, ready to deploy!
 
 ## 📂 What's Included
 
-✅ **7 Complete Pages**
+✅ **6 Complete Pages**
 - Home (landing page with hero, features, how it works)
 - Features (detailed feature breakdown)
 - Download (download options and installation guide)

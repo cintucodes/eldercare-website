@@ -2,22 +2,33 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
+// Import screenshots from the local folder
+import elderHome from './screenshots/WhatsApp Image 2026-05-09 at 17.24.26.jpeg'
+import healthVitals from './screenshots/WhatsApp Image 2026-05-09 at 17.23.56.jpeg'
+import medications from './screenshots/Screenshot_2026.png'
+import linkCodeElder from './screenshots/WhatsApp Image 2026-05-11 at 03.32.27.jpeg'
+import caregiverHome from './screenshots/WhatsApp Image 2026-05-11 at 03.32.27.jpeg'
+import sosScreen from './screenshots/WhatsApp Image 2026-05-09 at 17.24.20.jpeg'
+import history from './screenshots/Screenshot_2026.png'
+import alerts from './screenshots/WhatsApp Image 2026-05-09 at 17.23.56.jpeg'
+import linkCode from './screenshots/WhatsApp Image 2026-05-11 at 03.32.27.jpeg'
+
 export default function Screenshots() {
   const [activeTab, setActiveTab] = useState('elder')
 
   const elderScreenshots = [
-    { title: 'Home Dashboard', description: 'A centralized view of daily vitals and a prominent SOS button for emergencies.', src: '/screenshots/elder_home.png' },
-    { title: 'Vitals Logging', description: 'Simplified input fields designed for seniors to record heart rate and blood pressure.', src: '/screenshots/health_vitals.png' },
-    { title: 'Medication Alerts', description: 'Persistent full-screen alerts ensuring that critical medication doses are never missed.', src: '/screenshots/medications.png' },
-    { title: 'Emergency SOS', description: 'Safety-first SOS trigger with a visual countdown to prevent unintended activations.', src: '/screenshots/sos_screen.png' },
-    { title: 'Caregiver Link', description: 'Simple pairing process using a secure 6-digit invitation code for family members.', src: '/screenshots/link_code_elder.png' }
+    { title: 'Home Dashboard', description: 'A centralized view of daily vitals and a prominent SOS button for emergencies.', src: elderHome },
+    { title: 'Vitals Logging', description: 'Simplified input fields designed for seniors to record heart rate and blood pressure.', src: healthVitals },
+    { title: 'Medication Alerts', description: 'Persistent full-screen alerts ensuring that critical medication doses are never missed.', src: medications },
+    { title: 'Emergency SOS', description: 'Safety-first SOS trigger with a visual countdown to prevent unintended activations.', src: sosScreen },
+    { title: 'Caregiver Link', description: 'Simple pairing process using a secure 6-digit invitation code for family members.', src: linkCodeElder }
   ]
 
   const caregiverScreenshots = [
-    { title: 'Remote Monitoring', description: 'Real-time health status dashboard for monitoring loved ones from any location.', src: '/screenshots/caregiver_home.png' },
-    { title: 'Health Trends', description: 'Detailed graphical analysis of long-term heart rate, sleep, and activity patterns.', src: '/screenshots/history.png' },
-    { title: 'Smart Alerts', description: 'Prioritized notification system for abnormal health readings and potential concerns.', src: '/screenshots/alerts.png' },
-    { title: 'Easy Pairing', description: 'Streamlined account linking system to start monitoring via a secure invite code.', src: '/screenshots/link_code.png' }
+    { title: 'Remote Monitoring', description: 'Real-time health status dashboard for monitoring loved ones from any location.', src: caregiverHome },
+    { title: 'Health Trends', description: 'Detailed graphical analysis of long-term heart rate, sleep, and activity patterns.', src: history },
+    { title: 'Smart Alerts', description: 'Prioritized notification system for abnormal health readings and potential concerns.', src: alerts },
+    { title: 'Easy Pairing', description: 'Streamlined account linking system to start monitoring via a secure invite code.', src: linkCode }
   ]
 
   return (
@@ -56,10 +67,7 @@ export default function Screenshots() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {(activeTab === 'elder' ? elderScreenshots : caregiverScreenshots).map((screenshot, idx) => (
             <div key={idx} className="group">
-              <div className="relative mx-auto mb-6 w-full max-w-[260px] aspect-[9/19] rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900 shadow-2xl overflow-hidden transform group-hover:-translate-y-2 transition-all duration-300">
-                {/* Camera Notch simulation */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-900 rounded-b-2xl z-20"></div>
-                
+              <div className="relative mx-auto mb-6 w-full max-w-[260px] aspect-[9/19] rounded-xl border border-gray-100 bg-white shadow-lg overflow-hidden transform group-hover:-translate-y-1 group-hover:shadow-xl transition-all duration-300">
                 {screenshot.src ? (
                   <Image 
                     src={screenshot.src} 
@@ -69,7 +77,7 @@ export default function Screenshots() {
                     sizes="260px"
                   />
                 ) : (
-                  <div className="w-full h-full bg-gray-200 flex items-center justify-center text-4xl">
+                  <div className="w-full h-full flex items-center justify-center text-4xl opacity-30 bg-gray-50">
                     📱
                   </div>
                 )}

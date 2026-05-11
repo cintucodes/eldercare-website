@@ -11,7 +11,7 @@ Visit the website at: [https://eldercare-app.netlify.app](https://eldercare-app.
 - **Responsive Design**: Mobile-first approach, optimized for all devices
 - **Modern UI**: Built with Next.js 14 and Tailwind CSS
 - **SEO Optimized**: Meta tags, semantic HTML, and fast loading
-- **7 Pages**: Home, Features, Download, Docs, About, Support
+- **6 Pages**: Home, Features, Download, Docs, About, Support
 - **Accessible**: WCAG 2.1 AA compliant design
 - **Fast Performance**: Static site generation for optimal speed
 
