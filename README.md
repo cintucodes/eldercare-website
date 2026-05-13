@@ -36,7 +36,6 @@ eldercare-website/
 │   ├── Solution.js
 │   ├── Features.js
 │   ├── HowItWorks.js
-│   ├── Screenshots.js
 │   ├── TechStack.js
 │   └── CTA.js
 ├── public/                # Static assets (images, icons)
@@ -126,7 +125,7 @@ colors: {
 
 ## 📱 Pages Overview
 
-1. **Home** - Hero, problem statement, solution, features, how it works, screenshots, tech stack, CTA
+1. **Home** - Hero, problem statement, solution, features, how it works, tech stack, CTA
 2. **Features** - Detailed feature breakdown for elders and caregivers
 3. **Download** - Download options, system requirements, installation guide
 4. **Docs** - Quick start, user guides, features documentation, testing, troubleshooting

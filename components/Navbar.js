@@ -19,6 +19,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-700 hover:text-primary transition">Home</Link>
             <Link href="/download" className="text-gray-700 hover:text-primary transition">Download</Link>
+            
             <Link href="/docs" className="text-gray-700 hover:text-primary transition">Docs</Link>
             <Link href="/about" className="text-gray-700 hover:text-primary transition">About</Link>
             <Link href="/support" className="text-gray-700 hover:text-primary transition">Support</Link>
@@ -46,6 +47,7 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Home</Link>
+            <Link href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Services</Link>
             <Link href="/docs" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Docs</Link>
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">About</Link>
             <Link href="/support" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Support</Link>
