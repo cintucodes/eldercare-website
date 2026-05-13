@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Peace of Mind for Your <span className="text-primary">Loved Ones</span>
+              Peace of Mind for Your <span className="text-secondary">Loved Ones</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Monitor your elderly family members' health in real-time with automated alerts, medication reminders, and emergency SOS
