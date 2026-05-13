@@ -4,7 +4,7 @@ Modern, professional website for the ElderCare Android application - a remote he
 
 ## 🌐 Live Demo
 
-Visit the website at: [https://eldercare-app.netlify.app](https://eldercare-app.netlify.app)
+Visit the website at: [https://eldercare-app.netlify.app](https://eldercare-website.netlify.app/)
 
 ## 🚀 Features
 
