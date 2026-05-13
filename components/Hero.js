@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import elderHome from './screenshots/WhatsApp Image 2026-05-09 at 17.24.26.jpeg'
 
 export default function Hero() {
   return (
@@ -30,15 +28,6 @@ export default function Hero() {
             {/* Screenshot Container */}
             <div className="relative mx-auto w-full max-w-[280px] aspect-[9/19] rounded-2xl border border-gray-200 bg-white shadow-2xl overflow-hidden z-10">
               <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-20">📱</div>
-              <div className="relative w-full h-full">
-                <Image 
-                  src={elderHome} 
-                  alt="ElderCare App Interface" 
-                  fill 
-                  className="object-cover" 
-                  priority
-                />
-              </div>
             </div>
             {/* Floating Decorative Elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
