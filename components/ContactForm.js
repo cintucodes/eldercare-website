@@ -75,6 +75,7 @@ export default function ContactForm() {
         setTimeout(() => setShowToast(false), 4000)
       } else {
         const errMsg = data.error || 'Submission failed. Please try again.'
+        console.error('Server Error:', errMsg);
         setStatus({ type: 'error', message: errMsg })
         
         const lowered = errMsg.toLowerCase()

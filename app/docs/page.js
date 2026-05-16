@@ -42,7 +42,7 @@ export default function DocsPage() {
                     <img src="/website%20screenshots/alerts.jpeg" alt="Emergency SOS" className="rounded-lg border shadow-sm max-w-md w-full h-auto" />
                   </div>
                 </ul>
-                <img src="/website%20screenshots/alerts.jpeg" alt="Elder Dashboard" className="rounded-xl border shadow-md max-w-2xl w-full h-auto" />
+                <img src="/website%20screenshots/alerts.jpeg" alt="Elder Dashboard" className="rounded-xl border shadow-md max-w-xl w-full h-auto" />
               </div>
 
               <div className="border-l-4 border-secondary pl-6">
@@ -64,19 +64,19 @@ export default function DocsPage() {
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">📊 Health Vitals</h3>
                 <p className="text-gray-600">Track heart rate, blood pressure, glucose, sleep hours, and steps. Manual entry or automatic sync via Health Connect.</p>
-                <img src="/website%20screenshots/healthcharts.jpeg" alt="Health Vitals Tracking" className="mt-4 rounded border shadow-sm w-full h-auto" />
+                <img src="/website%20screenshots/healthcharts.jpeg" alt="Health Vitals Tracking" className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" />
               </div>
               
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">💊 Medications</h3>
                 <p className="text-gray-600">Set multiple reminders per medication. Full-screen alarm notifications ensure doses aren't missed.</p>
-                <img src="/website%20screenshots/medication.jpeg" alt="Medication Reminders" className="mt-4 rounded border shadow-sm w-full h-auto" />
+                <img src="/website%20screenshots/medication.jpeg" alt="Medication Reminders" className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" />
               </div>
               
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">🚨 Alert System</h3>
                 <p className="text-gray-600">Automated alerts for abnormal vitals: RED (heart rate &lt;60 or &gt;100), AMBER (sleep &lt;5 hours).</p>
-                <img src="/website%20screenshots/alerts.jpeg" alt="Smart Alerts" className="mt-4 rounded border shadow-sm w-full h-auto" />
+                <img src="/website%20screenshots/alerts.jpeg" alt="Smart Alerts" className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" />
               </div>
               
               <div className="bg-white border rounded-lg p-6">
@@ -86,7 +86,7 @@ export default function DocsPage() {
                   <img 
                     src="/website%20screenshots/alerts.jpeg" 
                     alt="Emergency SOS Alert" 
-                    className="rounded border shadow-sm w-full h-auto mb-4" />
+                    className="rounded border shadow-sm max-w-md w-full h-auto mb-4" />
                 </div>
                 <div className="mt-4">
                   <p className="text-sm text-gray-500 mb-2 font-medium">Elder Interface View:</p>

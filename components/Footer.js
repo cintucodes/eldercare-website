@@ -35,7 +35,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li className="text-gray-400">Email: cynthiakariuki3730@gmail.com</li>
+              <li>
+                <a href="mailto:cynthiakariuki3730@gmail.com" className="text-gray-400 hover:text-white transition">Email: cynthiakariuki3730@gmail.com</a>
+              </li>
               <li><a href="https://github.com/cintucodes" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">GitHub: @cintucodes</a></li>
             </ul>
           </div>
