@@ -6,7 +6,6 @@ export default function AppScreenshots() {
     { src: '/website%20screenshots/alerts.jpeg', caption: 'Elder Dashboard' },
     { src: '/website%20screenshots/healthcharts.jpeg', caption: 'Health Analytics' },
     { src: '/website%20screenshots/medication.jpeg', caption: 'Medication Reminders' },
-    { src: '/website%20screenshots/alerts.jpeg', caption: 'Smart Alerts' }
   ];
   return (
     <section className="py-20 bg-white">
@@ -16,7 +15,7 @@ export default function AppScreenshots() {
           <p className="text-xl text-gray-600">Intuitive and easy to use for both elders and caregivers</p>
         </div>
         
-        <div className="flex overflow-x-auto pb-8 lg:grid lg:grid-cols-3 gap-8 snap-x snap-mandatory">
+        <div className="flex overflow-x-auto pb-8 lg:grid lg:grid-cols-4 gap-8 snap-x snap-mandatory">
           {screenshots.map((screen, index) => (
             <div key={index} className="flex-none w-72 md:w-auto snap-center">
               <div className="mx-auto w-full max-w-[240px] aspect-[9/19] rounded-2xl border border-gray-200 bg-gray-100 shadow-2xl overflow-hidden mb-4 relative">

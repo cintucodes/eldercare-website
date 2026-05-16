@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function DocsPage() {
   return (
     <div className="pt-24 pb-16">
@@ -21,7 +23,13 @@ export default function DocsPage() {
                 <li>
                   <strong>Linking Code:</strong> Elder generates 6-digit code, Caregiver enters it to connect
                   <div className="mt-4">
-                    <img src="/website%20screenshots/caregiver-dashboard.jpeg" alt="Linking Code" className="rounded-lg border shadow-sm max-w-md w-full h-auto" />
+                    <Image 
+                      src="/website%20screenshots/caregiver-dashboard.jpeg" 
+                      alt="Linking Code" 
+                      width={450} 
+                      height={950} 
+                      className="rounded-lg border shadow-sm max-w-md w-full h-auto" 
+                    />
                   </div>
                 </li>
                 <li><strong>Start Monitoring:</strong> Elder logs vitals, Caregiver receives real-time updates</li>
@@ -39,7 +47,13 @@ export default function DocsPage() {
                   <li><strong>Logging Vitals:</strong> Go to Health tab → Select vital type → Enter value → Save</li>
                   <li><strong>Emergency SOS:</strong> Press red SOS button on Elder Dashboard → Confirm</li>
                 </ul>
-                <img src="/website%20screenshots/alerts.jpeg" alt="Elder Dashboard" className="rounded-xl border shadow-md max-w-xl w-full h-auto" />
+                <Image 
+                  src="/website%20screenshots/alerts.jpeg" 
+                  alt="Elder Dashboard" 
+                  width={600} 
+                  height={1266} 
+                  className="rounded-xl border shadow-md max-w-xl w-full h-auto" 
+                />
               </div>
 
               <div className="border-l-4 border-secondary pl-6">
@@ -61,29 +75,50 @@ export default function DocsPage() {
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">📊 Health Vitals</h3>
                 <p className="text-gray-600">Track heart rate, blood pressure, glucose, sleep hours, and steps. Manual entry or automatic sync via Health Connect.</p>
-                <img src="/website%20screenshots/healthcharts.jpeg" alt="Health Vitals Tracking" className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" />
+                <Image 
+                  src="/website%20screenshots/healthcharts.jpeg" 
+                  alt="Health Vitals Tracking" 
+                  width={450} 
+                  height={950} 
+                  className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" 
+                />
               </div>
               
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">💊 Medications</h3>
                 <p className="text-gray-600">Set multiple reminders per medication. Full-screen alarm notifications ensure doses aren't missed.</p>
-                <img src="/website%20screenshots/medication.jpeg" alt="Medication Reminders" className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" />
+                <Image 
+                  src="/website%20screenshots/medication.jpeg" 
+                  alt="Medication Reminders" 
+                  width={450} 
+                  height={950} 
+                  className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" 
+                />
               </div>
               
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">🚨 Alert System</h3>
                 <p className="text-gray-600">Automated alerts for abnormal vitals: RED (heart rate &lt;60 or &gt;100), AMBER (sleep &lt;5 hours).</p>
-                <img src="/website%20screenshots/alerts.jpeg" alt="Smart Alerts" className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" />
+                <Image 
+                  src="/website%20screenshots/alerts.jpeg" 
+                  alt="Smart Alerts" 
+                  width={450} 
+                  height={950} 
+                  className="mt-4 rounded border shadow-sm max-w-md w-full h-auto" 
+                />
               </div>
               
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-3">🆘 Emergency SOS</h3>
                 <p className="text-gray-600">One-tap emergency alert with GPS location sent to all linked caregivers via SMS and push notification.</p>
                 <div className="mt-4">
-                  <img 
+                  <Image 
                     src="/website%20screenshots/alerts.jpeg" 
                     alt="Emergency SOS Alert" 
-                    className="rounded border shadow-sm max-w-md w-full h-auto mb-4" />
+                    width={450} 
+                    height={950} 
+                    className="rounded border shadow-sm max-w-md w-full h-auto mb-4" 
+                  />
                 </div>
               </div>
             </div>
