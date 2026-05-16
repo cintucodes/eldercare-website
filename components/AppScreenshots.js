@@ -19,7 +19,7 @@ export default function AppScreenshots() {
         <div className="flex overflow-x-auto pb-8 lg:grid lg:grid-cols-3 gap-8 snap-x snap-mandatory">
           {screenshots.map((screen, index) => (
             <div key={index} className="flex-none w-72 md:w-auto snap-center">
-              <div className="mx-auto w-full max-w-[280px] aspect-[9/19] rounded-2xl border border-gray-200 bg-gray-100 shadow-2xl overflow-hidden mb-4 relative">
+              <div className="mx-auto w-full max-w-[240px] aspect-[9/19] rounded-2xl border border-gray-200 bg-gray-100 shadow-2xl overflow-hidden mb-4 relative">
                 <Image 
                   src={screen.src} 
                   alt={screen.caption} 

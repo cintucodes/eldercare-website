@@ -13,9 +13,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold mb-6">Our Story</h2>
           <div className="prose max-w-none text-gray-700 space-y-4">
             <p className="text-lg">
-              ElderCare was created to solve a universal challenge: how to care for elderly family members 
-              when you can't always be physically present. In today's world, adult children often live far 
-              from their aging parents, creating anxiety and stress for both parties.
+              ElderCare started as a final-year university project with a simple question: how can a caregiver in Nairobi know their parent in Machakos is okay? Existing solutions were either too expensive, not designed for African contexts, or required constant manual check-ins. So I built one from scratch — an Android app that monitors health vitals in real time, sends automated alerts for anything unusual, and gives elderly users a one-tap emergency button when they need help fast.
             </p>
             <p className="text-lg">
               This app bridges that distance by providing real-time health monitoring, automated alerts for 
@@ -35,15 +33,13 @@ export default function AboutPage() {
             <div className="bg-blue-50 p-8 rounded-xl">
               <h3 className="text-2xl font-semibold mb-4 text-primary">Mission</h3>
               <p className="text-gray-700">
-                To empower families with accessible, reliable technology that enables remote health monitoring 
-                and emergency response for elderly loved ones, fostering independence while ensuring safety.
+                To give Kenyan families an affordable, reliable way to monitor their elderly loved ones remotely — so that distance is never a reason someone misses a health emergency.
               </p>
             </div>
             <div className="bg-orange-50 p-8 rounded-xl">
               <h3 className="text-2xl font-semibold mb-4 text-secondary">Vision</h3>
               <p className="text-gray-700">
-                A world where distance is no barrier to caring for elderly family members, where technology 
-                seamlessly connects generations and provides peace of mind for all.
+                A future where any caregiver, regardless of income or location, can stay connected to an elderly family member's health without needing expensive equipment or a monthly subscription.
               </p>
             </div>
           </div>
@@ -59,8 +55,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-2">Cynthia Waithira</h3>
                 <p className="text-gray-600 mb-4">
-                  Software Developer passionate about creating technology that makes a real difference in people's lives. 
-                  ElderCare represents a commitment to using technical skills to solve meaningful problems and support families.
+                  I'm Cynthia Waithira, a BSc Information Technology student at Machakos University in Kenya. I built ElderCare as my final-year project after noticing how stressful it is for Kenyan families to look after elderly relatives when they cannot always be physically present. I wanted to build something that actually solves a real problem — not just a demo app. Outside of this project I enjoy Android development and building things that work for people in the Kenyan context.
                 </p>
                 <div className="flex space-x-4">
                   <a href="https://github.com/cintucodes" target="_blank" rel="noopener noreferrer" 

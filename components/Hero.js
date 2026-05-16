@@ -26,7 +26,7 @@ export default function Hero() {
           
           <div className="relative h-[500px] md:h-[600px] w-full flex items-center justify-center">
             {/* Medication Screenshot (Background Layer) */}
-            <div className="absolute translate-x-8 md:translate-x-12 translate-y-8 w-[190px] md:w-[280px] aspect-[9/19] rounded-3xl border-4 border-white bg-gray-100 shadow-2xl overflow-hidden z-10 transform rotate-6 transition-all hover:rotate-0 hover:scale-105 duration-500 hover:z-30">
+            <div className="absolute translate-x-8 md:translate-x-12 translate-y-8 w-[170px] md:w-[240px] aspect-[9/19] rounded-3xl border-4 border-white bg-gray-100 shadow-2xl overflow-hidden z-10 transform rotate-6 transition-all hover:rotate-0 hover:scale-105 duration-500 hover:z-30">
               <Image
                 src="/website%20screenshots/medication.jpeg"
                 alt="Medication Reminders Screen"
@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
 
             {/* Caregiver Dashboard Screenshot (Foreground Layer) */}
-            <div className="absolute -translate-x-8 md:-translate-x-12 -translate-y-8 w-[190px] md:w-[280px] aspect-[9/19] rounded-3xl border-4 border-white bg-gray-100 shadow-2xl overflow-hidden z-20 transform -rotate-6 transition-all hover:rotate-0 hover:scale-105 duration-500 hover:z-30">
+            <div className="absolute -translate-x-8 md:-translate-x-12 -translate-y-8 w-[170px] md:w-[240px] aspect-[9/19] rounded-3xl border-4 border-white bg-gray-100 shadow-2xl overflow-hidden z-20 transform -rotate-6 transition-all hover:rotate-0 hover:scale-105 duration-500 hover:z-30">
               <Image
                 src="/website%20screenshots/caregiver-dashboard.jpeg"
                 alt="Caregiver Dashboard Screen"

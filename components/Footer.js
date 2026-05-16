@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2026 ElderCare by Cynthia Waithira. Licensed under MIT License.</p>
+          <p>&copy; {new Date().getFullYear()} ElderCare by Cynthia Waithira. Licensed under MIT License.</p>
           <p className="mt-2">Built with ❤️ for families caring for their elderly loved ones</p>
         </div>
       </div>

@@ -38,9 +38,6 @@ export default function DocsPage() {
                 <ul className="space-y-2 text-gray-700 mb-4">
                   <li><strong>Logging Vitals:</strong> Go to Health tab → Select vital type → Enter value → Save</li>
                   <li><strong>Emergency SOS:</strong> Press red SOS button on Elder Dashboard → Confirm</li>
-                  <div className="mt-4">
-                    <img src="/website%20screenshots/alerts.jpeg" alt="Emergency SOS" className="rounded-lg border shadow-sm max-w-md w-full h-auto" />
-                  </div>
                 </ul>
                 <img src="/website%20screenshots/alerts.jpeg" alt="Elder Dashboard" className="rounded-xl border shadow-md max-w-xl w-full h-auto" />
               </div>
@@ -87,13 +84,6 @@ export default function DocsPage() {
                     src="/website%20screenshots/alerts.jpeg" 
                     alt="Emergency SOS Alert" 
                     className="rounded border shadow-sm max-w-md w-full h-auto mb-4" />
-                </div>
-                <div className="mt-4">
-                  <p className="text-sm text-gray-500 mb-2 font-medium">Elder Interface View:</p>
-                  <img 
-                    src="/website%20screenshots/alerts.jpeg" 
-                    alt="SOS Button Interface" 
-                    className="rounded border shadow-sm max-w-xs w-full h-auto" />
                 </div>
               </div>
             </div>
