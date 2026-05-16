@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function DownloadPage() {
   return (
     <div className="pt-24 pb-16">
@@ -11,14 +13,21 @@ export default function DownloadPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="bg-white rounded-xl shadow-xl p-10 mb-8 text-center border border-gray-100">
           <div className="flex justify-center gap-4 mb-10 overflow-x-auto pb-4">
-            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0">
-              <img src="/website%20screenshots/caregiver%20dashboard.jpeg" alt="App Dashboard Preview" className="w-full h-full object-cover" />
+            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0 relative">
+              <Image 
+                src="/website%20screenshots/caregiver-dashboard.jpeg" 
+                alt="App Dashboard Preview" 
+                fill 
+                className="object-cover" 
+              />
             </div>
-            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0 hidden sm:block">
-              <img src="/website%20screenshots/Healthcharts.jpeg" alt="Vitals Tracking Preview" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0 hidden md:block">
-              <img src="/website%20screenshots/Elder%20dashboard%20.jpeg" alt="Elder Dashboard Preview" className="w-full h-full object-cover" />
+            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0 relative">
+              <Image 
+                src="/website%20screenshots/healthcharts.jpeg" 
+                alt="Vitals Tracking Preview" 
+                fill 
+                className="object-cover" 
+              />
             </div>
           </div>
           <a

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Hero() {
   return (
     <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-orange-50">
@@ -22,15 +24,28 @@ export default function Hero() {
             <p className="mt-4 text-sm text-gray-500">Free and Open Source • MIT License</p>
           </div>
           
-          <div className="relative">
-            {/* Screenshot Container */}
-            <div className="relative mx-auto w-full max-w-[280px] aspect-[9/19] rounded-2xl border border-gray-200 bg-gray-100 shadow-2xl overflow-hidden z-10">
-              <img 
-                src="/website%20screenshots/caregiver-dashboard.jpeg" 
-                alt="ElderCare App Dashboard" 
-                className="absolute inset-0 w-full h-full object-cover" 
+          <div className="relative h-[500px] md:h-[600px] w-full flex items-center justify-center">
+            {/* Medication Screenshot (Background Layer) */}
+            <div className="absolute translate-x-8 md:translate-x-12 translate-y-8 w-[190px] md:w-[280px] aspect-[9/19] rounded-3xl border-4 border-white bg-gray-100 shadow-2xl overflow-hidden z-10 transform rotate-6 transition-all hover:rotate-0 hover:scale-105 duration-500 hover:z-30">
+              <Image
+                src="/website%20screenshots/medication.jpeg"
+                alt="Medication Reminders Screen"
+                fill
+                className="object-cover"
               />
             </div>
+
+            {/* Caregiver Dashboard Screenshot (Foreground Layer) */}
+            <div className="absolute -translate-x-8 md:-translate-x-12 -translate-y-8 w-[190px] md:w-[280px] aspect-[9/19] rounded-3xl border-4 border-white bg-gray-100 shadow-2xl overflow-hidden z-20 transform -rotate-6 transition-all hover:rotate-0 hover:scale-105 duration-500 hover:z-30">
+              <Image
+                src="/website%20screenshots/caregiver-dashboard.jpeg"
+                alt="Caregiver Dashboard Screen"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+            
             {/* Floating Decorative Elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>

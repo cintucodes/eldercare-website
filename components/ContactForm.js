@@ -91,18 +91,20 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4">
       <div>
-        <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700">Name (optional)</label>
+        <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700">
+          Name <span className="text-gray-400 font-normal">(optional)</span>
+        </label>
         <input ref={nameRef} id="contact-name" name="name" value={name} onChange={handleChange(setName)} className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 outline-none transition" />
       </div>
 
       <div>
         <label htmlFor="contact-email" className="block text-sm font-medium text-gray-700">Email</label>
-        <input ref={emailRef} id="contact-email" name="email" required type="email" value={email} onChange={handleChange(setEmail)} className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 outline-none transition" />
+        <input ref={emailRef} id="contact-email" name="email" required type="email" autoComplete="email" value={email} onChange={handleChange(setEmail)} className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 outline-none transition" />
       </div>
 
       <div>
         <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700">Message</label>
-        <textarea ref={messageRef} id="contact-message" name="message" required value={message} onChange={handleChange(setMessage)} rows={4} className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 outline-none transition" />
+        <textarea ref={messageRef} id="contact-message" name="message" required value={message} onChange={handleChange(setMessage)} rows={4} className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 outline-none transition resize-none" />
       </div>
 
       <div className="flex items-center gap-3">
