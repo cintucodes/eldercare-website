@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Hero() {
   return (
     <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-orange-50">
@@ -13,9 +11,9 @@ export default function Hero() {
               Monitor your elderly family members' health in real-time with automated alerts, medication reminders, and emergency SOS
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/download" className="btn-primary text-center">
+              <a href="https://github.com/cintucodes/Eldercare/releases/download/v1.0/app-release.apk" download className="btn-primary text-center">
                 Download for Android
-              </Link>
+              </a>
               <a href="https://github.com/cintucodes/Eldercare" target="_blank" rel="noopener noreferrer" 
                  className="btn-secondary text-center">
                 View on GitHub
@@ -26,8 +24,12 @@ export default function Hero() {
           
           <div className="relative">
             {/* Screenshot Container */}
-            <div className="relative mx-auto w-full max-w-[280px] aspect-[9/19] rounded-2xl border border-gray-200 bg-white shadow-2xl overflow-hidden z-10">
-              <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-20">📱</div>
+            <div className="relative mx-auto w-full max-w-[280px] aspect-[9/19] rounded-2xl border border-gray-200 bg-gray-100 shadow-2xl overflow-hidden z-10">
+              <img 
+                src="/website%20screenshots/caregiver-dashboard.jpeg" 
+                alt="ElderCare App Dashboard" 
+                className="absolute inset-0 w-full h-full object-cover" 
+              />
             </div>
             {/* Floating Decorative Elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>

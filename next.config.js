@@ -5,6 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    turbopack: {
+      root: __dirname,
+    },
+  },
 }
 
 module.exports = nextConfig

@@ -2,17 +2,11 @@ const steps = [
   {
     number: '1',
     title: 'Download & Register',
-    description: 'Elder and caregiver create accounts with email and password',
+    description: 'Create your caregiver account with email and password',
     icon: '📲'
   },
   {
     number: '2',
-    title: 'Link Accounts',
-    description: 'Connect using secure 6-digit code for instant pairing',
-    icon: '🔗'
-  },
-  {
-    number: '3',
     title: 'Stay Connected',
     description: 'Monitor health, receive alerts, and respond instantly 24/7',
     icon: '💚'

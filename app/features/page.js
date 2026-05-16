@@ -2,20 +2,20 @@ import Link from 'next/link'
 
 export default function FeaturesPage() {
   const elderFeatures = [
-    { icon: '📊', title: 'Health Vitals Tracking', description: 'Log heart rate, blood pressure, glucose, sleep hours, and daily steps with easy-to-use interface' },
-    { icon: '🔗', title: 'Health Connect Integration', description: 'Automatic sync from wearable devices like Fitbit, Samsung Watch, and Garmin' },
-    { icon: '💊', title: 'Medication Management', description: 'Set reminders with alarm notifications, track dosage and frequency' },
-    { icon: '📅', title: 'Appointment Scheduling', description: 'Track doctor visits with reminders and click-to-call functionality' },
+    { icon: '📊', title: 'Health Vitals Tracking', description: 'Log heart rate, blood pressure, glucose, sleep hours, and daily steps with easy-to-use interface', screenshot: '/website%20screenshots/Healthcharts.jpeg' },
+    { icon: '⌚', title: 'Health Connect Integration', description: 'Automatic sync from wearable devices like Fitbit, Samsung Watch, and Garmin' },
+    { icon: '💊', title: 'Medication Management', description: 'Set reminders with alarm notifications, track dosage and frequency', screenshot: '/website%20screenshots/medication.jpeg' },
+    { icon: '📅', title: 'Appointment Scheduling', description: 'Track doctor visits with reminders and click-to-call functionality', screenshot: '/website%20screenshots/appointments.jpeg' },
     { icon: '🆘', title: 'Emergency SOS', description: 'One-tap emergency alert with GPS location sent to caregivers via SMS' },
     { icon: '👤', title: 'Profile Management', description: 'Store medical history, allergies, and chronic conditions' },
     { icon: '🎯', title: 'Customizable Step Goals', description: 'Set personalized daily activity targets' }
   ]
 
   const caregiverFeatures = [
-    { icon: '📈', title: 'Real-Time Monitoring', description: 'View elder\'s health data instantly via Firebase real-time sync' },
-    { icon: '🚨', title: 'Automated Alert System', description: 'Receive push notifications for abnormal vitals (heart rate <60 or >100, sleep <5 hours)' },
+    { icon: '📈', title: 'Real-Time Monitoring', description: 'View elder\'s health data instantly via Firebase real-time sync', screenshot: '/website%20screenshots/caregiver%20dashboard.jpeg' },
+    { icon: '🚨', title: 'Automated Alert System', description: 'Receive push notifications for abnormal vitals (heart rate <60 or >100, sleep <5 hours)', screenshot: '/website%20screenshots/alerts.jpeg' },
     { icon: '📱', title: 'Remote Dashboard', description: 'Monitor multiple vitals at a glance with visual charts' },
-    { icon: '🔗', title: 'Easy Linking Process', description: 'Connect to elders via secure 6-digit invite codes' },
+    { icon: '🔗', title: 'Easy Linking Process', description: 'Connect to elders via secure 6-digit invite codes', screenshot: '/website%20screenshots/codelinking.jpeg' },
     { icon: '📞', title: 'Quick Actions', description: 'Call or view details directly from notifications' },
     { icon: '📊', title: 'Activity Feed', description: 'Track elder\'s daily health activities and trends' }
   ]
@@ -37,10 +37,17 @@ export default function FeaturesPage() {
           <p className="text-xl text-gray-600 text-center mb-12">Simple, large-button design for easy senior access</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {elderFeatures.map((feature, index) => (
-              <div key={index} className="feature-card">
-                <div className="text-5xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+              <div key={index} className="feature-card flex flex-col md:flex-row gap-4 h-full">
+                <div className="flex-1">
+                  <div className="text-5xl mb-4">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+                {feature.screenshot && (
+                  <div className="w-full md:w-[120px] xl:w-[160px] max-w-[200px] aspect-[9/19] rounded-xl border border-gray-200 shadow-sm overflow-hidden flex-shrink-0 mt-4 md:mt-0 mx-auto">
+                    <img src={feature.screenshot} alt={`${feature.title} Preview`} className="w-full h-full object-cover" />
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -51,10 +58,17 @@ export default function FeaturesPage() {
           <p className="text-xl text-gray-600 text-center mb-12">Comprehensive monitoring dashboard for remote care</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caregiverFeatures.map((feature, index) => (
-              <div key={index} className="feature-card">
-                <div className="text-5xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+              <div key={index} className="feature-card flex flex-col md:flex-row gap-4 h-full">
+                <div className="flex-1">
+                  <div className="text-5xl mb-4">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+                {feature.screenshot && (
+                  <div className="w-full md:w-[120px] xl:w-[160px] max-w-[200px] aspect-[9/19] rounded-xl border border-gray-200 shadow-sm overflow-hidden flex-shrink-0 mt-4 md:mt-0 mx-auto">
+                    <img src={feature.screenshot} alt={`${feature.title} Preview`} className="w-full h-full object-cover" />
+                  </div>
+                )}
               </div>
             ))}
           </div>

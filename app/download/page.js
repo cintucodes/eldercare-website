@@ -9,57 +9,36 @@ export default function DownloadPage() {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white rounded-xl shadow-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">Download Options</h2>
-          
-          <div className="space-y-6">
-            <div className="border-2 border-primary rounded-lg p-6">
-              <h3 className="text-2xl font-semibold mb-3 flex items-center">
-                <span className="text-3xl mr-3">📱</span>
-                Google Play Store (Coming Soon)
-              </h3>
-              <p className="text-gray-600 mb-4">
-                The app will be available on Google Play Store soon. Stay tuned!
-              </p>
-              <div className="flex items-center gap-4">
-                <button disabled className="bg-gray-300 text-gray-600 px-6 py-3 rounded-lg cursor-not-allowed">
-                  Coming Soon
-                </button>
-                <a href="mailto:cynthiakariuki3730@gmail.com?subject=Request%20ElderCare%20Play%20Store%20Updates" className="text-sm text-gray-600 hover:underline">
-                  Notify me when live
-                </a>
-              </div>
+        <div className="bg-white rounded-xl shadow-xl p-10 mb-8 text-center border border-gray-100">
+          <div className="flex justify-center gap-4 mb-10 overflow-x-auto pb-4">
+            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0">
+              <img src="/website%20screenshots/caregiver%20dashboard.jpeg" alt="App Dashboard Preview" className="w-full h-full object-cover" />
             </div>
-
-            <div className="border-2 border-gray-300 rounded-lg p-6">
-              <h3 className="text-2xl font-semibold mb-3 flex items-center">
-                <span className="text-3xl mr-3">📦</span>
-                Direct APK Download
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Download the APK file directly from GitHub releases
-              </p>
-              <a href="https://github.com/cintucodes/Eldercare/releases" target="_blank" rel="noopener noreferrer" 
-                 className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
-                Download from GitHub
-              </a>
-              <p className="text-sm text-gray-500 mt-3">If you prefer an installer hosted elsewhere (S3, CDN), we recommend uploading signed APKs to a stable URL and serving via HTTPS. Use the GitHub Releases link above in the meantime.</p>
+            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0 hidden sm:block">
+              <img src="/website%20screenshots/Healthcharts.jpeg" alt="Vitals Tracking Preview" className="w-full h-full object-cover" />
             </div>
-
-            <div className="border-2 border-gray-300 rounded-lg p-6">
-              <h3 className="text-2xl font-semibold mb-3 flex items-center">
-                <span className="text-3xl mr-3">💻</span>
-                Source Code
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Clone the repository and build from source
-              </p>
-              <a href="https://github.com/cintucodes/Eldercare" target="_blank" rel="noopener noreferrer" 
-                 className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
-                View on GitHub
-              </a>
+            <div className="w-40 md:w-48 aspect-[9/19] rounded-xl border border-gray-200 shadow-md overflow-hidden flex-shrink-0 hidden md:block">
+              <img src="/website%20screenshots/Elder%20dashboard%20.jpeg" alt="Elder Dashboard Preview" className="w-full h-full object-cover" />
             </div>
           </div>
+          <a
+            href="https://github.com/cintucodes/Eldercare/releases/download/v1.0/app-release.apk"
+            download
+            className="inline-block bg-primary text-white font-bold text-lg py-4 px-8 rounded-xl hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-4"
+          >
+            Download APK (v1.0)
+          </a>
+          <div className="text-sm text-gray-500 mb-6">
+            Version 1.0.0 (Beta) • Android • Free
+          </div>
+          <a
+            href="https://github.com/cintucodes/Eldercare/releases/tag/v1.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline font-medium"
+          >
+            View release on GitHub
+          </a>
         </div>
 
         <div className="bg-gray-50 rounded-xl p-8 mb-8">
@@ -85,35 +64,27 @@ export default function DownloadPage() {
         </div>
 
         <div className="bg-blue-50 rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6">Installation Guide</h2>
+          <h2 className="text-3xl font-bold mb-6">Installation Instructions</h2>
           <ol className="space-y-4 text-gray-700">
             <li className="flex items-start">
               <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-semibold">1</span>
-              <div>
-                <strong>Download the APK</strong>
-                <p className="text-gray-600">Get the latest release from GitHub</p>
-              </div>
+              <div className="pt-1">Tap the download button to get the APK file</div>
             </li>
             <li className="flex items-start">
               <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-semibold">2</span>
-              <div>
-                <strong>Enable Unknown Sources</strong>
-                <p className="text-gray-600">Settings → Security → Allow installation from unknown sources</p>
-              </div>
+              <div className="pt-1">On your Android phone, open the downloaded file</div>
             </li>
             <li className="flex items-start">
               <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-semibold">3</span>
-              <div>
-                <strong>Install the App</strong>
-                <p className="text-gray-600">Open the APK file and follow installation prompts</p>
-              </div>
+              <div className="pt-1">If prompted, enable "Install from unknown sources" in Settings → Security</div>
             </li>
             <li className="flex items-start">
               <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-semibold">4</span>
-              <div>
-                <strong>Create Accounts</strong>
-                <p className="text-gray-600">Register as Elder or Caregiver and link accounts</p>
-              </div>
+              <div className="pt-1">Follow the on-screen instructions to install</div>
+            </li>
+            <li className="flex items-start">
+              <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-semibold">5</span>
+              <div className="pt-1">Open ElderCare and register your account</div>
             </li>
           </ol>
         </div>

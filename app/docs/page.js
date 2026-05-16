@@ -15,11 +15,8 @@ export default function DocsPage() {
             <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="text-xl font-semibold mb-4">5-Minute Setup</h3>
               <ol className="space-y-3">
-                <li><strong>Download and Install:</strong> Get the app from GitHub releases</li>
-                <li><strong>Create Elder Account:</strong> Register with email and password, select "Elder" role</li>
-                <li><strong>Create Caregiver Account:</strong> Register on a separate device or logout and create new account</li>
-                <li><strong>Link Accounts:</strong> Elder generates 6-digit code, Caregiver enters it to connect</li>
-                <li><strong>Start Monitoring:</strong> Elder logs vitals, Caregiver receives real-time updates</li>
+                <li><strong>Download:</strong> Get the app from GitHub releases and install on your Android device.</li>
+                <li><strong>Monitor:</strong> Log in as a Caregiver to receive real-time health updates and alerts.</li>
               </ol>
             </div>
           </section>
@@ -28,16 +25,6 @@ export default function DocsPage() {
             <h2 className="text-3xl font-bold mb-6">User Guides</h2>
             
             <div className="space-y-6">
-              <div className="border-l-4 border-primary pl-6">
-                <h3 className="text-2xl font-semibold mb-3">Elder Guide</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li><strong>Logging Vitals:</strong> Go to Health tab → Select vital type → Enter value → Save</li>
-                  <li><strong>Medication Reminders:</strong> Medications tab → Add medication → Set reminder times</li>
-                  <li><strong>Emergency SOS:</strong> Press red SOS button on home screen → Confirm → Alert sent with GPS location</li>
-                  <li><strong>Health Connect Sync:</strong> Profile tab → "Sync from Health Connect" → Choose test scenario</li>
-                </ul>
-              </div>
-
               <div className="border-l-4 border-secondary pl-6">
                 <h3 className="text-2xl font-semibold mb-3">Caregiver Guide</h3>
                 <ul className="space-y-2 text-gray-700">
@@ -73,21 +60,6 @@ export default function DocsPage() {
                 <h3 className="text-xl font-semibold mb-3">🆘 Emergency SOS</h3>
                 <p className="text-gray-600">One-tap emergency alert with GPS location sent to all linked caregivers via SMS and push notification.</p>
               </div>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">Testing Guide</h2>
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded">
-              <h3 className="text-xl font-semibold mb-3">Testing Without Wearables</h3>
-              <p className="mb-4">Use the built-in mock data generator:</p>
-              <ol className="space-y-2">
-                <li>1. Login as Elder → Profile tab</li>
-                <li>2. Tap "Sync from Health Connect"</li>
-                <li>3. Choose scenario: Normal Data, Full Day, or Abnormal</li>
-                <li>4. Mock vitals are generated and synced to Firebase</li>
-                <li>5. Login as Caregiver to see alerts and notifications</li>
-              </ol>
             </div>
           </section>
 

@@ -26,11 +26,6 @@ export default function Features() {
       emoji: '🆘',
       title: 'Emergency SOS',
       description: 'One-tap alert with GPS location sent to caregivers via SMS'
-    },
-    {
-      emoji: '📱',
-      title: 'Two-Way Monitoring',
-      description: 'Separate interfaces optimized for elders and caregivers'
     }
   ]
 
